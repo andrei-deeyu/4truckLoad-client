@@ -1,0 +1,187 @@
+#singleFreightContainer {
+  /* border-top: 1px solid hsl(0, 2%, 75%); */
+  background-color: white;
+  border-radius: .375rem;
+  box-shadow: 0 0.1875rem 1.5rem rgba(153, 153, 153, 0.3);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.lastHASHTAGFreights {
+  border-bottom: 1px solid hsl(0, 2%, 75%);
+}
+
+#singleFreight {
+  text-align: left;
+  margin: 1rem;
+  margin-left: 3rem;
+  width: 600px;
+}
+
+#singleFreight .createdAt {
+  font-size: .8rem;
+  margin-bottom: .2rem;
+  color: rgb(128, 128, 128);
+}
+
+#singleFreight .locationDestination {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  height: 1.4rem;
+  color: #203372
+}
+
+#singleFreight .showDetails {
+  display: block;
+  word-break: break-word;
+  margin-top: 0.4rem
+}
+
+#singleFreight .info {
+  font-weight: 600;
+  margin-top: .4rem;
+}
+
+
+#singleFreight .tonnage {
+  width: max-content;
+  display: inline-block;
+}
+
+#singleFreight .info .packing {
+  display: flex;
+}
+
+
+#singleFreight .info .packing .leftMargin {
+  margin-left: 1rem;
+}
+
+#singleFreight .info .packing .sizeMargin span:nth-of-type(2),
+#singleFreight .info .packing .sizeMargin span:nth-of-type(3) {
+  margin-left: .4rem;
+}
+
+#singleFreight .info .packing .sizeMargin .noLeftMargin {
+  margin-left: 0;
+}
+
+#singleFreight .info .truckRequirements {
+  margin-top: .2rem;
+  display: block;
+  font-weight: normal;
+}
+
+#singleFreight .info .featureRequirements {
+  font-weight: normal;
+}
+
+#singleFreight .info .featureFlexIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
+#singleFreight .info .featureRequirements .iconFeature {
+  font-size: .8rem;
+  margin-right: .4rem;
+}
+
+#singleFreight .info .infoSingleItemMargin {
+  margin-left: .8rem;
+}
+
+#singleFreight .contact {
+  margin-top: .2rem;
+  display: flex;
+}
+
+#singleFreight .contactData{
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column
+}
+
+
+@media only screen and (min-width: 800px) { /* desktops */
+  input {
+    margin-left: 1rem
+  }
+  input:first-of-type {
+    margin-left: 0;
+  }
+}
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) { /* fluid="md" */
+  #singleFreightContainer {
+    padding: 1rem
+  }
+
+  #singleFreight {
+    margin: .5rem;
+    width: auto;
+  }
+
+  #singleFreight .showDetails {
+    width: auto
+  }
+
+  #singleFreight .info .truckRequirements {
+    margin-top: 0;
+  }
+
+  #singleFreight .info .truckRequirements,
+  #singleFreight .info .featureRequirements {
+    font-size: .8rem;
+  }
+
+  #singleFreight .contact {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #singleFreight {
+    margin: 0
+  }
+
+  #singleFreight .locationDestination{
+    font-size: 1rem;
+    height: auto;
+  }
+
+  #singleFreight .showDetails {
+    margin-top: 0;
+  }
+
+  #singleFreight .contact {
+    font-size: .8rem;
+    margin-top: .2rem;
+  }
+
+  #singleFreight .info .packing .leftMargin {
+    margin-left: 0;
+  }
+
+  #singleFreight .info .packing .pallet {
+    margin-top: .2rem;
+  }
+
+  #singleFreight .info .packing {
+    flex-direction: column;
+  }
+
+  #singleFreight .info .packing {
+    font-size: .8rem;
+  }
+
+  #singleFreight .info .truckRequirements {
+    display: block;
+    font-weight: normal;
+    font-size: .8rem;
+    margin-top: 0;
+  }
+}

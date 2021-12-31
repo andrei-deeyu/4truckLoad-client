@@ -1,0 +1,151 @@
+/* Elements */
+  .input-group {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: .4rem;
+  }
+
+  .input-group-text {
+    border: none;
+    border-radius: .375rem 0 0 .375rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .userInfo {
+    width: 100%;
+    background-color: #f6f8f9;
+    color: black;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 2.375rem;
+  }
+
+  #subscription .userInfo {
+    border-radius: 0 .375rem .375rem 0; /* round the background to not override the border */
+  }
+
+  .GREENhighlight {
+    border: 2px solid #009c74;
+    border-radius: .375rem;
+  }
+
+  .REDhighlight {
+    border: 2px solid #9c0000;
+    border-radius: .375rem;
+  }
+
+  p.profileImageAlert {
+    text-align: left;
+    font-size: .8rem;
+    margin-left: .6rem;
+    margin-top: .6rem;
+  }
+
+  /* Submit button */
+  .updateChanges {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 14rem;
+  }
+
+  .updateChanges span {
+    text-align: center;
+  }
+
+  /* Payment */
+  .subscriptionContainer {
+    margin-bottom: 4rem;
+  }
+
+  .subscriptionCard {
+    background-color: white;
+    box-shadow: 0 0.1875rem 1.5rem rgb(153 153 153 / 30%);
+    border-radius: .375rem;
+    height: 340px;
+    width: 17rem;
+    display: inline-block;
+  }
+
+  .subscriptionCard:nth-of-type(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .subscriptionCard .planName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .subscriptionCard .price {
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
+  .perMonths {
+    color: #02d5b5;
+    font-weight: bold;
+  }
+
+  #submit {
+    width: 12rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+
+  .CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .partnerBranding {
+    height: 1.8rem;
+    margin-top: .4rem;
+  }
+
+  .logoutButton {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+
+
+@media only screen and (max-width: 746px) {
+  .subscriptionCard:first-of-type {
+    margin-right: .5rem;
+  }
+  .subscriptionCard:nth-of-type(2) {
+    margin-right: 0;
+    margin-left: .5rem;
+  }
+
+  .subscriptionCard:nth-of-type(3) {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsiveRoleInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stayInlineRoleInput {
+    margin-bottom: .5rem;
+    margin-right: 0;
+  }
+
+  .subscriptionCard:first-of-type {
+    margin-right: 0;
+  }
+
+  .subscriptionCard:nth-of-type(2) {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}

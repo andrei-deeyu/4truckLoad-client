@@ -1,0 +1,60 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "npm install express",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.16.1",
+    "@googlemaps/js-api-loader": "^1.12.2",
+    "@stripe/stripe-js": "^1.16.0",
+    "auth0-js": "^9.16.2",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "countdown": "^2.6.0",
+    "dotenv": "^8.6.0",
+    "firebase": "^8.10.0",
+    "joi": "^13.7.0",
+    "node-fetch": "^2.6.1",
+    "vue": "^2.6.11",
+    "vue-gtag": "^1.16.1",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

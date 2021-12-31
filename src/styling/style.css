@@ -1,0 +1,577 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(253, 253, 253);
+}
+
+.b-alert {
+  position: fixed;
+  bottom: 1rem;
+  margin-bottom: 0;
+  width: 100%;
+  z-index: 1000
+}
+
+.alert-non-premium {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Disable arrows from Number input  */
+input::-webkit-outer-spin-button, /* Chrome, Safari, Edge, Opera */
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] { /* Firefox  */
+    -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: .365rem;
+}
+
+
+/* Exchange / Dashboard  */
+.home {
+  padding: 0;
+}
+
+.addFreightRouterLink {
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.noFreightAddedWarning {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.secondNavbar {
+  margin-bottom: 4rem;
+}
+
+#freights {
+  /* border-top: 1px solid hsl(0, 2%, 75%); */
+  background-color: white;
+  border-radius: .375rem;
+  box-shadow: 0 0.1875rem 1.5rem rgba(153, 153, 153, 0.3);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.lastHASHTAGFreights {
+  border-bottom: 1px solid hsl(0, 2%, 75%);
+}
+
+#freight {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#freight:hover {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: rgb(0, 0, 0)/* rgb(39, 40, 176) */
+}
+
+#freight:hover .locationDestination {
+  transition: color 0.3s ease;
+  color: #081c54;
+}
+
+#freight .createdAt {
+  font-size: .8rem;
+  height: 1.5rem;
+  margin-bottom: 0;
+  color: rgb(128, 128, 128);
+}
+
+#freight .locationDestination {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #203372
+}
+
+/* top */
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.distance {
+  margin-top: .5rem;
+}
+
+.tonnage {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  align-items: flex-end;
+  color: #203372;
+  word-break: break-word;
+  width: 45%;
+  font-weight: normal;
+  text-align: left;
+  max-height: 3rem;
+  overflow: hidden;
+}
+
+.detailsMobile {
+  display: none;
+  color: #203372;
+  word-break: break-word;
+  width: 45%;
+  max-width: 60vw;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.2rem;
+  max-height: 2.4rem;
+  overflow: hidden;
+}
+
+/* bottom */
+.bottom {
+  margin-top: -1.5rem;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.secondLine {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondLine .leftAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;
+}
+
+#freight .hyphen {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+#freight  .initialOffer {
+  width: 10rem;
+  text-align: left;
+}
+
+
+#freight  .initialOffer .TVA {
+  font-weight: normal;
+  font-size: .8rem;
+}
+
+#freight  .truckRequirements {
+  display: block;
+  font-weight: normal;
+}
+
+#freight .trucktypeTopMargin {
+  margin-top: .4rem;
+}
+
+
+#freight  .featureRequirements {
+  font-weight: normal;
+}
+
+#freight  .featureFlexIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
+#freight  .featureRequirements .iconFeature {
+  font-size: .8rem;
+  margin-right: .3rem;
+}
+
+#freight  .infoSingleItemMargin {
+  margin-left: .8rem;
+}
+
+.specimen {
+  background-color: crimson;
+  margin-top: .4rem;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .365rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Offer container */
+.openOfferContainer {
+  font-weight: 600;
+  color: #575757;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+
+.openOfferContainer:hover {
+  color: #203372;
+}
+
+.openOfferContainer:active {
+  color: #0331c7;
+}
+
+.placeOfferContainer {
+  display: flex;
+  margin-top: 1rem;
+  background-color: hsla(226, 56%, 29%, 0.15);
+  padding: 1rem;
+  padding-right: 0;
+  width: 500px;
+  border-radius: .375rem;
+  text-align: left;
+}
+
+.placeOfferContainer .input-group {
+  width: 12rem;
+}
+.placeOfferContainer .input-group-text {
+  width: 3.6rem;
+}
+
+.deliveryTimeInputGroup {
+  margin-top: 1rem;
+}
+
+.offerButton {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.placeOfferContainer #trucktype {
+  margin-left: 0;
+}
+
+.placeOfferContainer #trucktype div {
+  margin-top: 1rem;
+}
+
+.placeOfferContainer #trucktype div:first-of-type {
+  margin-top: 0;
+}
+
+
+/* LandingPage | headlineImage */
+.headlineImage .offers {
+  background-color: white;
+  width: 400px;
+  padding: 1rem;
+  /* border: 1px solid #7dc2ff94; */
+  border-radius: .375rem;
+  box-shadow: 0 0.1875rem 1.5rem rgba(153, 153, 153, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 2rem;
+  word-break: break-word;
+}
+
+.headlineImage p.newOffer {
+  color: #009c74;
+  margin-top:4px;
+  margin-left: 1rem;
+}
+
+.headlineImage .offers .data {
+  text-align: left;
+}
+
+.headlineImage .offers .companyName {
+  color: #203372;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.headlineImage .offers .theOffer {
+  font-weight: 600;
+}
+
+.headlineImage .offers .fromUser {
+  width: 35%;
+  text-align: right;
+}
+
+/* singleFreight Offers */
+.theOffers {
+  background-color: white;
+  max-width: 600px;
+  padding: 1rem;
+  /* border: 1px solid #7dc2ff94; */
+  border-radius: .375rem;
+  box-shadow: 0 0.1875rem 1.5rem rgba(153, 153, 153, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1rem;
+  word-break: break-word;
+}
+
+.theOffers .createdAt {
+  font-size: .8rem;
+  margin-bottom: .2rem;
+  color: rgb(128, 128, 128);
+}
+
+.theOffers  .trucktypeLeftMargin {
+  margin-left: .4rem;
+}
+
+.theOffers  .deliveryInfo {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.theOffers  .deliveryInfo .deliveryTime {
+  margin-right: .6rem;
+}
+
+.theOffers  .deliveryInfo .trucktypeFlexIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.theOffers  .deliveryInfo .iconTruck {
+  margin-right: .2rem;
+}
+
+.CUI {
+  font-size: .8rem;
+  margin-bottom: .2rem;
+  color: rgb(128, 128, 128);
+  margin-left: .4rem;
+}
+
+
+.theOffers  .data {
+  text-align: left;
+}
+
+.theOffers  .data .companyName {
+  color: #203372;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.theOffers  .data .theOffer {
+  font-weight: 600;
+}
+
+.theOffers  .fromUser {
+  width: 40%;
+  text-align: right;
+  font-size: .8rem;
+}
+
+.theOffers  .fromUser .email {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  margin-top: 80vh;
+  display: flex;
+  align-items: flex-end;
+  padding: .5rem;
+}
+
+.footerData a {
+  text-decoration: none;
+  color: #575757;
+}
+
+.logoutFooter {
+  margin-top: 8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footerlogoutButton {
+  font-size: .8rem;
+  margin: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footerlogoutButton:hover {
+  color: #081c54;
+  font-size: .9rem;
+}
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 1000px) {
+  .secondLine {
+    justify-content: flex-start
+  }
+
+  .secondLine .leftAlign {
+    width: auto;
+  }
+
+  .location {
+    width: 70%;
+  }
+
+  .bottom {
+    margin-left: 0;
+    margin-top: .5rem;
+    font-size: .8rem;
+  }
+
+  #freight .details {
+    display: none;
+  }
+
+  #freight .detailsMobile {
+    display: block;
+    text-align: left;
+    margin-bottom: .15rem;
+  }
+}
+
+@media only screen and (max-width: 768px) { /* fluid="md" */
+  #freights {
+    padding: 1rem
+  }
+
+  #freight {
+    margin: .5rem;
+    width: auto;
+  }
+
+  #freight .block {
+    display: block;
+    margin-left: 0;
+  }
+
+  .detailsMobile {
+    width: auto
+  }
+
+  #freight .contact {
+    margin-top: 0;
+  }
+
+  .placeOfferContainer {
+    flex-direction: column;
+    padding-right: 1rem;
+    width: auto;
+    font-size: .8rem;
+  }
+
+  .placeOfferContainer .input-group {
+    width: auto
+  }
+
+  .placeOfferContainer #trucktype {
+    margin-top: 1rem;
+  }
+
+  .placeOfferContainer #trucktype div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .placeOfferContainer #trucktype input[type=checkbox] {
+    margin-left: 0rem;
+  }
+
+  .placeOfferContainer .form-control,
+  .placeOfferContainer .input-group-text {
+    font-size: .8rem;
+  }
+
+  .offerButton {
+    font-size: .8rem;
+  }
+
+  .theOffers {
+    flex-direction: column;
+  }
+
+  .theOffers  .fromUser {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .theOffers  .fromUser .email{
+    margin-top: -4px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #freight {
+    margin: 0
+  }
+
+  #freight .locationDestination {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  .contact {
+    font-size: .8rem;
+    margin-top: .2rem;
+  }
+
+  #freight  .featureRequirements {
+    display: none;
+  }
+
+  #freight .openOfferContainer  {
+    height: 1.5rem;
+    line-height: .2rem;
+    margin-top: .4rem;
+    font-size: .8rem;
+    margin-left: .5rem;
+  }
+  .deliveryTime {
+    font-weight: 400;
+  }
+
+  .theOffers  .deliveryInfo {
+    flex-direction: column
+  }
+
+  .theOffers  .trucktypeLeftMargin {
+    margin-left: 0;
+  }
+}

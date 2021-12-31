@@ -1,0 +1,30 @@
+.companyForm {
+  margin-top: 2rem;
+}
+
+.input-group {
+  margin-top: .4rem;
+}
+.custom-select {
+  margin-top: .4rem;
+}
+
+#signupButton {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 426px) {
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.input-group {
+  border-radius: 0;
+  font-size: .8rem;
+}
+.custom-select {
+  border-radius: 0;
+}
+
+}
