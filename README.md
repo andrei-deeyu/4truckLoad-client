@@ -1,28 +1,28 @@
 # Software Requirement Specification
 
 ## Outline
-1. [Introduction](https://github.com/andrei-deeyu/transclient#introduction)
-2. [Overall Description](https://github.com/andrei-deeyu/transclient#overall-description)
-3. [Intended Audience](https://github.com/andrei-deeyu/transclient#intended-audience)
-4. [Functionality](https://github.com/andrei-deeyu/transclient#functionality)
-5. [Platform](https://github.com/andrei-deeyu/transclient#platform)
-6. [Development Responsibilities](https://github.com/andrei-deeyu/transclient#development-responsibilities)
-7. [User Class and Characteristics](https://github.com/andrei-deeyu/transclient#user-class-and-characteristics)
+1. [Introduction](https://github.com/andrei-deeyu/4truckLoad-client#introduction)
+2. [Overall Description](https://github.com/andrei-deeyu/4truckLoad-client#overall-description)
+3. [Intended Audience](https://github.com/andrei-deeyu/4truckLoad-client#intended-audience)
+4. [Functionality](https://github.com/andrei-deeyu/4truckLoad-client#functionality)
+5. [Platform](https://github.com/andrei-deeyu/4truckLoad-client#platform)
+6. [Development Responsibilities](https://github.com/andrei-deeyu/4truckLoad-client#development-responsibilities)
+7. [User Class and Characteristics](https://github.com/andrei-deeyu/4truckLoad-client#user-class-and-characteristics)
 8. System Features and Requirements
 
-	8.1. [Functional Requirements](https://github.com/andrei-deeyu/transclient#functional-requirements)
+	8.1. [Functional Requirements](https://github.com/andrei-deeyu/4truckLoad-client#functional-requirements)
 
-	8.2. [User Interfaces](https://github.com/andrei-deeyu/transclient#user-interfaces)
+	8.2. [User Interfaces](https://github.com/andrei-deeyu/4truckLoad-client#user-interfaces)
 
-	8.3. [Hardware Interfaces](https://github.com/andrei-deeyu/transclient#hardware-interfaces)
+	8.3. [Hardware Interfaces](https://github.com/andrei-deeyu/4truckLoad-client#hardware-interfaces)
 
-	8.4. [Performance Requirements](https://github.com/andrei-deeyu/transclient#performance-requirements)
+	8.4. [Performance Requirements](https://github.com/andrei-deeyu/4truckLoad-client#performance-requirements)
 
-	8.5. [Safety Requirements](https://github.com/andrei-deeyu/transclient#safety-requirements "Safety Requirements")
+	8.5. [Safety Requirements](https://github.com/andrei-deeyu/4truckLoad-client#safety-requirements "Safety Requirements")
 
-	8.6. [Security Requirements](https://github.com/andrei-deeyu/transclient#security-requirements "Security Requirements")
+	8.6. [Security Requirements](https://github.com/andrei-deeyu/4truckLoad-client#security-requirements "Security Requirements")
 
-9. [Software Quality Attributes](https://github.com/andrei-deeyu/transclient#software-quality-attributes)
+9. [Software Quality Attributes](https://github.com/andrei-deeyu/4truckLoad-client#software-quality-attributes)
 
 
 #### Introduction
@@ -36,7 +36,7 @@ It is intended for the developer, designer, and tester working on \`4truckLoad\`
 * the metrics used to determine the project\`s progress
 
 #### Overall Description
-Companies need freight transport to various destinations, especially in the manufacturing industry. The problem is that most companies end up using multiple sources of networking to find the right transporters. The biggest challenge is finding an available transporter, ready to deliver the freight before the deadline. \`4truckLoad\` will solve this problem by creating a freight exchange app, differentiating itself through in-app bids (transport offers). In this way, the clients no longer have to be called many times by the transporters, letting them to choose from a list who they want to hire.
+Companies need freight transport to various destinations, especially in the manufacturing industry. The problem is that most companies end up using multiple sources to find the right transporters. The biggest challenge is finding an available transporter, ready to deliver the freight before the deadline. \`4truckLoad\` will solve this problem by creating a freight exchange app, differentiating itself through in-app bids (transport offers). In this way, the clients no longer have to be called many times by the transporters, letting them to choose from a list who they want to hire.
 
 #### Intended Audience
 
@@ -115,7 +115,7 @@ Standard users, called **clients**, will have access just to add transportation 
 * Usability: The interface should be easy to learn without a tutorial and allow users to accomplish their goals without errors.
 
 
-## Server installation
+## [Server](https://github.com/andrei-deeyu/4truckLoad-server) installation
 
 ### Project setup
 ```
